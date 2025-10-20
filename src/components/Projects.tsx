@@ -1,5 +1,6 @@
 "use client";
 
+import { fadeInUp } from "@/lib/motion/variants";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 
@@ -37,23 +38,24 @@ export const Projects = () => {
   return (
     <section id="projects" className="py-24 px-4 bg-gradient-secondary">
       <div className="container mx-auto max-w-6xl">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="space-y-12"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-center">
-            Featured <span className="gradient-text">Projects</span>
-          </h2>
-
-          <div className="space-y-12">
-            {projects.map((project, index) => (
-              <ProjectCard key={project.title} {...project} index={index} />
-            ))}
-          </div>
-        </motion.div>
+        <div className="space-y-12">
+          <motion.div
+            variants={fadeInUp()}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="space-y-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-center">
+              Featured <span className="gradient-text">Projects</span>
+            </h2>
+            <div className="space-y-12">
+              {projects.map((project, index) => (
+                <ProjectCard key={project.title} {...project} index={index} />
+              ))}
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

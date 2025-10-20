@@ -1,6 +1,5 @@
 "use client";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -9,7 +8,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { cn } from "@/lib/utils";
 import { Menu, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
@@ -42,18 +40,18 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? "glass py-3" : "bg-transparent py-4"
-      )}
+      }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Avatar className="w-10 h-10 ring-2 ring-primary/20">
-              <AvatarImage src={"/images/avatar.jpg"} alt="@shadcn" />
-              <AvatarFallback>TC</AvatarFallback>
-            </Avatar>
+            <img
+              src="/images/avatar.jpg"
+              alt="Thomas Roy Chappel"
+              className="w-10 h-10 rounded-full object-cover ring-2 ring-primary/20"
+            />
             <span className="font-semibold text-base md:text-lg">
               Thomas Roy Chappel
             </span>

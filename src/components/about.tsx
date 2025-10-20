@@ -1,5 +1,7 @@
 "use client";
 
+import { DISTANCE, DURATION } from "@/lib/motion/constants";
+import { fadeInUp } from "@/lib/motion/variants";
 import { motion } from "framer-motion";
 import SkillPill from "./SkillPill";
 
@@ -26,10 +28,13 @@ export const About = () => {
     <section id="about" className="py-24 px-4">
       <div className="container mx-auto max-w-4xl">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={fadeInUp({
+            distance: DISTANCE.sm,
+            duration: DURATION.normal,
+          })}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="space-y-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-center">

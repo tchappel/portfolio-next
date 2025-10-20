@@ -1,6 +1,6 @@
 "use client";
 
-import heroBackground from "@/assets/hero-bg-modern-dev-setup.jpg";
+import heroBackground from "@/assets/hero-bg-clean-workspace.jpg";
 import { DELAY, DISTANCE, DURATION } from "@/lib/motion/constants";
 import { fadeInUp } from "@/lib/motion/variants";
 import { motion } from "framer-motion";
