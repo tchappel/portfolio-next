@@ -1,0 +1,54 @@
+import { Github, Linkedin, Twitter } from "lucide-react";
+
+export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="py-12 px-4 border-t border-border">
+      <div className="container mx-auto">
+        <div className="flex flex-col items-end space-y-4">
+          <div className="text-right">
+            <p className="font-semibold text-lg">Thomas Roy Chappel</p>
+            <p className="text-sm text-muted-foreground">
+              Crafting beautiful web experiences
+            </p>
+          </div>
+
+          <div className="flex gap-4">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full hover:bg-primary/10 transition-colors"
+              aria-label="GitHub"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full hover:bg-primary/10 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full hover:bg-primary/10 transition-colors"
+              aria-label="Twitter"
+            >
+              <Twitter className="w-5 h-5" />
+            </a>
+          </div>
+
+          <p className="text-sm text-muted-foreground">
+            © {currentYear} Thomas Roy Chappel. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};

@@ -1,0 +1,19 @@
+---
+title: "State Management in 2025: Signals, Stores, and Simplicity"
+date: "2025-07-22"
+description: "A look at new trends replacing Redux and Context for state management."
+tags: ["state-management", "react", "signals"]
+---
+
+# State Management in 2025
+
+Libraries like **Jotai**, **Zustand**, and **Signals** focus on granular updates instead of large global states.
+
+For example, Zustand’s store pattern:
+
+```ts
+const useStore = create((set) => ({
+  count: 0,
+  increment: () => set((s) => ({ count: s.count + 1 })),
+}));
+```

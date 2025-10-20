@@ -1,0 +1,17 @@
+---
+title: "Integrating shadcn/ui with Next.js and Tailwind 4"
+date: "2025-05-15"
+description: "How to structure and extend shadcn/ui components in modern Next.js projects."
+tags: ["shadcn", "tailwind", "nextjs"]
+---
+
+# Integrating shadcn/ui with Next.js
+
+After installing with `npx shadcn-ui@latest add button`,  
+you can easily extend styles using **class-variance-authority**.
+
+```ts
+const button = cva("rounded-xl text-sm", {
+  variants: { intent: { primary: "bg-primary text-white" } },
+});
+```

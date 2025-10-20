@@ -1,0 +1,19 @@
+---
+title: "React 19: A Deep Dive into the New Hooks"
+date: "2025-09-20"
+description: "Exploring useActionState, useOptimistic, and other exciting additions in React 19."
+tags: ["react", "react-19", "hooks"]
+---
+
+# React 19: A Deep Dive into the New Hooks
+
+React 19 introduces **server actions** and several new hooks designed to simplify async logic.
+
+```tsx
+"use client";
+import { useActionState } from "react";
+
+const [state, formAction] = useActionState(submitForm, initialState);
+```
+
+These hooks make client–server coordination far more intuitive.
