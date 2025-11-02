@@ -47,7 +47,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] Add Shadcn UI
 - [x] Add Next Theme (Dark/Light)
 - [x] add base robots.txt
-- [ ] Prepare base for globals.css
+- [x] Prepare base for globals.css
 - [ ] Add Framer Motion
 - [ ] Add Navbar with Dark/Light Toggle
 - [ ] Add Footer
