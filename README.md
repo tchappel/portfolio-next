@@ -41,7 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] Add config for Prettier
 - [x] Setup Husky
 - [x] Add Fonts
-- [ ] Add base Meta Title and Description
+- [x] Add base Meta Title and Description
 - [ ] Add Next Theme (Dark/Light)
 - [ ] Add Shadcn UI
 - [ ] Prepare base for globals.css
