@@ -48,7 +48,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] Add Next Theme (Dark/Light)
 - [x] add base robots.txt
 - [x] Prepare base for globals.css
-- [ ] Add Framer Motion
+- [x] Add Framer Motion
 - [ ] Add Navbar with Dark/Light Toggle
 - [ ] Add Footer
 - [ ] Add Tests for Navbar and Footer
