@@ -1,3 +1,5 @@
+# Portfolio-Next
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -44,8 +46,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] Add base Meta Title and Description
 - [x] Add Shadcn UI
 - [x] Add Next Theme (Dark/Light)
+- [x] add base robots.txt
 - [ ] Prepare base for globals.css
-- [ ] Add Storybook ?
 - [ ] Add Framer Motion
 - [ ] Add Navbar with Dark/Light Toggle
 - [ ] Add Footer
@@ -58,5 +60,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] Add Blog section (MDX)
 - [ ] Add E2E Tests (Cypress / Playwright)
 - [ ] Add CI/CD with GitHub Actions - Deploy to Vercel
-- [ ] robots.txt and sitemap.xml
+- [ ] add sitemap.xml
+- [ ] add complete robots.txt
 - [ ] SEO optimization
+- [ ] Add Storybook ?
