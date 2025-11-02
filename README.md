@@ -42,12 +42,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] Setup Husky
 - [x] Add Fonts
 - [x] Add base Meta Title and Description
-- [ ] Add Next Theme (Dark/Light)
-- [ ] Add Shadcn UI
+- [x] Add Shadcn UI
+- [x] Add Next Theme (Dark/Light)
 - [ ] Prepare base for globals.css
 - [ ] Add Storybook ?
 - [ ] Add Framer Motion
-- [ ] Add Navbar
+- [ ] Add Navbar with Dark/Light Toggle
 - [ ] Add Footer
 - [ ] Add Tests for Navbar and Footer
 - [ ] Add Hero
